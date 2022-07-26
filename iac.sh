@@ -1,11 +1,11 @@
 #!/bin/bash
 
-## -------------------------------------------------------------------- ##
-## 	Script p/ criar diretorios, grupos, usuários e permissões       ##
-##	  Scritp - iac.sh, Versão 1.1, 26/07/2022		      	##
-##	  Certique-se do arquivo ter permissões de execução: chmod 744	##
-## 	  p/ utilizar o Script, execute o comando: " sudo ./iac.sh " 	##
-## -------------------------------------------------------------------- ##
+## ---------------------------------------------------------------------------------- ##
+## 	Script p/ criar diretorios, grupos, usuários e permissões       	      ##
+##	  Scritp - iac.sh, Versão 1.1, 26/07/2022		      		      ##
+##	  Certique-se do arquivo ter permissões de execução: chmod 744	ou chmod +x   ##
+## 	  p/ utilizar o Script, execute o comando: sudo ./iac.sh ou ./iac.sh          ##
+## ---------------------------------------------------------------------------------- ##
 
 ## Criando diretorio public
 echo "Criando diretorio public..."
