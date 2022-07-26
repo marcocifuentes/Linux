@@ -1,28 +1,28 @@
-## Instalando servidor de arquivos SAMBA
+# Instalando servidor de arquivos SAMBA
 sudo apt install samba
 
-##definindo diretorio para compartilhamento
+# Definindo diretório para compartilhamento
 mkdir /public
 
-##alterando permissoes full (rwxrwxrwx) p/ todos os usuarios
+# Alterando permissoões full (rwxrwxrwx) p/ todos os usuários
 chmod 777 public/
 
-##alterando configuracoes no smb.conf
+# Alterando configurações no smb.conf
 nano /etc/samba/smb.conf
-# inserir, no final do arquivo, parametros p/ compartilhar diretorio
+# Inserir, no final do arquivo, parâmetros p/ compartilhar diretório
 [public]
 path = /public
 writable = yes
 guest ok = yes
 guest only = yes
 
-##reiniciar o servico do servidor SAMBA em segundo plano (daemon)
+# Reiniciar o serviço do servidor SAMBA em segundo plano (daemon)
 systemctl restart smbd
 
-##verificar status do servico (se esta ouvindo requisicoes)
+# Verificar status do serviço (se está ouvindo requisições)
 systemctl status smbd
 
-##definir execucao automatica do servico (caso reinicie o servidor)
+# Definir execução automática do serviço (caso reinicie o servidor)
 systemctl anable smbd
 
 

@@ -1,0 +1,17 @@
+#Instalção Servidor Web APACHE
+sudo apt install apache2 -y
+
+#Verificar se servidor está ativo (ouvindo requisições)
+systemctl status apache2
+
+#Reiniciar o serviço do Servidor Web APACHE em segundo plano (daemon)
+systemctl restart apache2
+
+#Testando Servidor Web / solicitando requisição http 
+#Digitar endereço ip do servidor no browser, Ex.: 10.0.0.121
+
+#A página do servidor Web fica em:
+/var/www/html/index.html
+
+
+
