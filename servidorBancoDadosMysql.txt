@@ -3,23 +3,32 @@ apt install mysql-server-8.0 -y
 
 # Logon no banco de dados
 mysql -u root -p
-## listando banco de dados existentes
+
+# Listando banco de dados existentes
 show databases;
-## criando banco de dados novo (meubanco)
+
+# Criando banco de dados novo (meubanco)
 create database meubanco;
-## usando o banco de dados novo
+
+# Usando o banco de dados novo
 use meubanco;
-## criando tabela no (meubanco)
+
+# Criando tabela no (meubanco)
 create table Pessoas (PessoaID int, Nome varchar(50), Sobrenome varchar(50), Endereco varchar(100), Cidade varchar(50));
-## mostrar tabela criada
+
+# Mostrar tabela criada
 show tables;
-## verificando conteúdo na tabela
+
+# Verificando conteúdo na tabela
 select * FROM Pessoas;
-## inserindo dados na tabela
+
+# Inserindo dados na tabela
 insert into Pessoas (PessoaID, Nome, Sobrenome, Endereco, Cidade) VALUES (1, 'Joao', 'da Silva', 'Rua Pedro Otto, 31', 'Floripa/SC');
-## verificando conteudo na tabela
+
+# Verificando conteudo na tabela
 select * FROM Pessoas;
-## saida do banco de dados
+
+# Saída do banco de dados
 exit
 
 
